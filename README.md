@@ -26,4 +26,5 @@ Para visitar nuestra página web, haz clic en el siguiente enlace: [https://newf
 ¡Esperamos que disfrutes explorando nuestra página web y encuentres útiles las herramientas y recursos que hemos creado para ti! 
 Si tienes alguna pregunta o sugerencia, no dudes en comunicarte con nuestro equipo a través de la página de contacto en la web.
 
-¡Gracias por tu interés en New Focus!
+![image](https://github.com/m4icol/New-Focus/assets/93083280/7019e551-788d-430b-9b34-c5f874df0403)
+

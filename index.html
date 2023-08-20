@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style-responsive.css">
+    <link rel="stylesheet" href="custom-properties.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,341 +16,422 @@
 </head>
 <body>
 
+<div class="wrapper-page">
 
-<header class="nav-container">
+    <!-- Header - Nav -->
 
-    <div class="nav-name">
-        <h2 class="nav-title">
-            <span class="span-new">New</span>
-            <span class="span-focus">Focus</span>
-        </h2>
-    </div>
+    <header class="nav-container">
 
-    <ul class="menu">
-        <li class="menu-items">
-            <a href="#sectionHome" class="nav_links">Inicio</a>
-        </li>
-        <li class="menu-items">
-            <a href="#sectionAbout" class="nav_links">Acerca</a>
-        </li>
-        <li class="menu-items">
-            <a href="#sectionQuestion" class="nav_links">Preguntas</a>
-        </li>
-    </ul>
-
-</header>
-
-<div class="header-space"></div>
-
-<div class="swiper" id="sectionHome">
-    <div class="swiper-wrapper">
-
-<!-- Slider 1 -->
-
-<div class="swiper-slide index-slider-1">
-
-    <div class="introduction">
-        <h1 class="title">Bienvenindo a New Focus</h1>
-        <div class="introduction-box">
-            <h2 class="subtitle">Comienza a darle un Nuevo Enfoque a tu vida</h2>
-            <ul class="introduction-list">
-                <li class="introduction-items">Crea tus hábitos</li>
-                <li class="introduction-items">Planea tu rutina</li>
-                <li class="introduction-items">Lista de tareas</li>
-                <li class="introduction-items">Calendario</li>
-                <li class="introduction-items">Bitacora</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="sample-index-slider-mobile">
-        <img class="sample-mobile" alt="sample-mobile-1" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-    </div>
-
-    <div class="sample-index-slider-1">
-        <div class="container-sample-1">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-        </div>
-        <div class="container-sample-1">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-        </div>
-        <div class="container-sample-1">
-            <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
-        </div>
-    </div>
-
-</div>
-
-<!-- Slider 2 -->
-
-<div class="swiper-slide index-slider-2">
-    <div class="introduction-2">
-        <div class="box-content">
-            <img class="sample-2 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
-            <h2 class="title">Tus hábitos</h2>
-            <img class="sample-2 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
+        <div class="nav-name">
+            <h2 class="nav-title">
+                <span class="span-new">New</span>
+                <span class="span-focus">Focus</span>
+            </h2>
         </div>
 
-        <div class="introduction-box">
-            <h2 class="subtitle-2">Crea tu mejor version</h2>
-            <p class="text-introduction">
-                Se constante con tus hábitos, cumple lo que te propones. <br> ¡Supera las estadísticas!
-            </p>
-            <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
-        </div>
-    </div>
+        <ul class="menu">
+            <li class="menu-items">
+                <a href="#sectionHome" class="nav_links">Inicio</a>
+            </li>
+            <li class="menu-items">
+                <a href="#sectionAbout" class="nav_links">Acerca</a>
+            </li>
+            <li class="menu-items">
+                <a href="#sectionQuestion" class="nav_links">Preguntas</a>
+            </li>
+        </ul>
 
-    <div class="sample-index-slider-mobile-2">
-        <img class="sample-mobile-2" alt="sample-mobile-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
-    </div>
-</div>
+    </header>
 
-<!-- Slider 3 -->
+    <!-- ######## Separator ########--> <div class="header-space"></div>
 
-<div class="swiper-slide index-slider-3">
+    <section class="swiper" id="sectionHome">
+        <div class="swiper-wrapper">
 
-    <div class="sample-index-slider-3 effect-gradient">
-        <div class="container-sample-3">
-            <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
-        </div>
-        <div class="container-sample-3">
-            <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
-            <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
-        </div>
-        <div class="container-sample-3">
-            <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
-        </div>
-    </div>
+    <!-- Slider 1 -->
 
-    <div class="introduction">
-        <div class="box-content">
-            <h2 class="title">Tus Rutinas</h2>
-        </div>
+            <div class="swiper-slide index-slider-1">
 
-        <div class="introduction-box">
-            <h2 class="subtitle-2">Planea tu día</h2>
-            <p class="text-introduction">
-                Proyecta tu vida con orden, construye tu rutina personalizada, se constante para cumplir tus metas
-            </p>
-            <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
-        </div>
-    </div>
-
-    <div class="sample-index-slider-mobile-2">
-        <img class="sample-mobile-2" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
-    </div>
-</div>
-
-<!-- Slider 4 -->
-
-<div class="swiper-slide index-slider-4">
-
-    <div class="circles-container">
-        <div class="circles effect-gradient"><p class="num-circles">1</p></div>
-        <div class="circles circles-2 effect-gradient"><p class="num-circles">2</p></div>
-        <div class="circles effect-gradient"><p class="num-circles">3</p></div>
-    </div>
-
-    <div class="introduction-4">
-
-        <div class="sample-index-slider-4">
-            <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
-            <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
-        </div>
-
-        <div class="box-content">
-            <h2 class="title">Lista de tareas</h2>
-        </div>
-
-        <div class="introduction-box-4">
-            <h2 class="subtitle-4">Jerarquiza que es lo mas importante en tu día</h2>
-            <p class="text-introduction">
-                Ordena tus tareas, metas y deseos. Da lo mejor de ti para completarlos!
-            </p>
-            <img class="newfocus-logo res" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
-
-        </div>
-
-        <div class="sample-index-slider-4">
-            <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
-            <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
-        </div>
-
-    </div>
-
-    <div class="circles-container">
-        <div class="circles effect-gradient"><p class="num-circles">4</p></div>
-        <div class="circles circles-5 effect-gradient"><p class="num-circles">5</p></div>
-        <div class="circles effect-gradient"><p class="num-circles">6</p></div>
-    </div>
-
-    <div class="sample-index-slider-mobile-2">
-        <img class="sample-mobile-2" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
-    </div>
-</div>
-
-<!-- Slider 5 -->
-
-<div class="swiper-slide index-slider-5">
-    <div class="introduction-5">
-        <div class="box-content">
-            <h2 class="title">Calendario</h2>
-        </div>
-
-        <div class="introduction-box">
-            <h2 class="subtitle">¡No lo olvides!</h2>
-            <p class="text-introduction-4">
-                Recuerda con antelación tus eventos importantes como los cumpleaños, tus reuniones y festividades
-            </p>
-            <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
-        </div>
-    </div>
-
-    <div class="sample-index-slider-5">
-        <div class="calendar effect-gradient">
-            <div class="calendar-head">
-                <h3 class="calendar-head-text">CALENDARIO</h3>
-            </div>
-            <p class="calendar-text">20<br>23</p>
-        </div>
-        <div class="sample-index-slider-sub-5">
-            <img class="sample-5 sample-res" alt="sample-slider-5" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
-            <img class="sample-5 sample-res" alt="sample-slider-5" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
-        </div>
-    </div>
-
-    <div class="sample-index-slider-mobile">
-        <img class="sample-mobile-2" alt="" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
-    </div>
-
-</div>
-
-<!-- Slider 6 -->
-
-<div class="swiper-slide index-slider-6">
-    <div class="introduction-5">
-        <h2 class="title">Bitacora</h2>
-
-    <div class="introduction-box">
-        <h2 class="subtitle">No los olvides!</h2>
-        <p class="text-introduction">
-            Memora tus recuerdos en palabras, anota tus sentimientos, describe como fue tu día, se mas consciente de lo que quieres y quien eres
-        </p>
-    </div>
-</div>
-
-<div class="sample-index-slider-mobile-3">
-    <img class="sample-mobile-2 sample-6" alt="sample-mobile-2" src="https://static.wixstatic.com/media/e41247_4659db4f0de4436fb8e315b09c703385~mv2.png">
-</div>
-</div>
-
-
-    </div>
-
-<!-- Flechas de navegación  -->
-<div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
-
-
-<div id="sectionAbout"></div>
-
-<section class="section-about">
-
-    <h2 class="title-2">Sobre <br> New Focus</h2>
-
-    <div class="container-box-about">
-        <div class="subcontainer-1 effect-gradient">
-            <h3 class="name-box-about">New Focus</h3>
-            <h6 class="slogan-box-about">CREA TU MEJOR VERSIÓN</h6>
-            <img class="icon-box-about" alt="icono-newfocus" src="https://static.wixstatic.com/media/e41247_968c0b6efef0474b94df4e74d4bfd81f~mv2.png">
-        </div>
-        <div class="subcontainer-2">
-            <h3 class="name-box-about-2">New Focus</h3>
-            <h6 class="slogan-box-about-2">CREA TU MEJOR VERSIÓN</h6>
-            <p class="text-box-about">New Focus es una aplicación la cual incentivara a las personas para que logren mejorar su rendimiento, disciplina y motivación en sus hábitos cotidianos, será de ayuda con el desarrollo de los objetivos de las personas y que estos logren dejar sus malos hábitos</p>
-        </div>
-    </div>
-
-    <div class="container-dropdown">
-        <div class="text-dropdown">
-            <h3 class="title-area">Misión</h3>
-            <p class="description-area">Mejorar el estado de vida de los estudiantes, que han sido afectados por poseer malos hábitos y enseñarles estrategias para crear hábitos que mejoren su forma de vivir.</p>
-        </div>
-        <div class="text-dropdown">
-            <h3 class="title-area">Visión</h3>
-            <p class="description-area">Estimamos que en unos años ofreceremos la mejor experiencia ayudando a los estudiantes para que logren cumplir sus objetivos y puedan mejorar su estilo de vida.</p>
-        </div>
-        <div class="text-dropdown">
-            <h3 class="title-area">R. Social</h3>
-            <p class="description-area">Sabemos que nuestra vida está controlada por nuestros hábitos. La idea será concientizar a los estudiantes a poner atención en sus acciones y en alcanzar los objetivos que se proponen.</p>
-        </div>
-        <div class="text-dropdown">
-            <h3 class="title-area">R. Ambiental</h3>
-            <p class="description-area">Mediante tareas individuales y colectivas las personas ayudaran inconscientemente al planeta e instruir la toma de conciencia sobre el cuidado y la protección del planeta.</p>
-        </div>
-    </div>
-
-</section>
-
-<div id="sectionQuestion"></div>
-
-<section class="section-question">
-
-    <div  class="secCuatro">
-
-        <h2 class="title box">Mas sobre nuestro objetivo</h2>
-        <div class="text-box-about box">Si estas interesado en saber un poco mas sobre el objetivo de esta aplicacion puedes ver temas relacionados con los hábitos o sus caracteristicas</div>
-
-        <div class="frecuentContainer">
-
-            <div class="frecuentItems fr1">
-                <div class="question">
-                    <h3 class="questions">¿Qué es un habito?</h3>
-                    <div class="more">+</div>
+                <div class="introduction">
+                    <h1 class="title">Bienvenindo a New Focus</h1>
+                    <div class="introduction-box">
+                        <h2 class="subtitle">Comienza a darle un Nuevo Enfoque a tu vida</h2>
+                        <ul class="introduction-list">
+                            <li class="introduction-items">Crea tus hábitos</li>
+                            <li class="introduction-items">Planea tu rutina</li>
+                            <li class="introduction-items">Lista de tareas</li>
+                            <li class="introduction-items">Calendario</li>
+                            <li class="introduction-items">Bitacora</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="answer">
-                    <p>Un hábito es una acción o comportamiento repetido de forma regular, automática y casi inconsciente. Los hábitos son patrones que formamos en nuestra vida diaria y pueden ser tanto positivos como negativos.</p>
+
+                <div class="sample-index-slider-mobile">
+                    <img class="sample-mobile" alt="sample-mobile-1" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                </div>
+
+                <div class="sample-index-slider-1">
+                    <div class="container-sample-1">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                    </div>
+                    <div class="container-sample-1">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                    </div>
+                    <div class="container-sample-1">
+                        <img class="sample-1 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_11a3d6815b2f4c7fb92512503ada8b54~mv2.png">
+                    </div>
+                </div>
+
+            </div>
+
+    <!-- Slider 2 -->
+
+            <div class="swiper-slide index-slider-2">
+                <div class="introduction-2">
+                    <div class="box-content">
+                        <img class="sample-2 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
+                        <h2 class="title">Tus hábitos</h2>
+                        <img class="sample-2 sample-res" alt="sample-slider-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
+                    </div>
+
+                    <div class="introduction-box">
+                        <h2 class="subtitle-2">Crea tu mejor version</h2>
+                        <p class="text-introduction">
+                            Se constante con tus hábitos, cumple lo que te propones. <br> ¡Supera las estadísticas!
+                        </p>
+                        <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
+                    </div>
+                </div>
+
+                <div class="sample-index-slider-mobile-2">
+                    <img class="sample-mobile-2" alt="sample-mobile-2" src="https://static.wixstatic.com/media/e41247_9e4c73409f1841acb7a3442dc5b8d5cf~mv2.png">
                 </div>
             </div>
 
-            <div class="frecuentItems fr2">
-                <div class="question">
-                    <h3 class="questions">Tipos de hábitos?</h3>
-                    <div class="more">+</div>
+    <!-- Slider 3 -->
+
+            <div class="swiper-slide index-slider-3">
+
+                <div class="sample-index-slider-3 effect-gradient">
+                    <div class="container-sample-3">
+                        <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
+                    </div>
+                    <div class="container-sample-3">
+                        <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
+                        <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
+                    </div>
+                    <div class="container-sample-3">
+                        <img class="sample-3 sample-res" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
+                    </div>
                 </div>
-                <div class="answer">
-                    <p>Nuestra vida está conformada por nuestros hábitos. Algunas de las categorías que abarcan los hábitos son: <br> • Hábitos Alimenticios <br> • Hábitos Deportivos <br>• Hábitos de Descanso <br>• Hábitos Académicos</p>
+
+                <div class="introduction">
+                    <div class="box-content">
+                        <h2 class="title">Tus Rutinas</h2>
+                    </div>
+
+                    <div class="introduction-box">
+                        <h2 class="subtitle-2">Planea tu día</h2>
+                        <p class="text-introduction">
+                            Proyecta tu vida con orden, construye tu rutina personalizada, se constante para cumplir tus metas
+                        </p>
+                        <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
+                    </div>
+                </div>
+
+                <div class="sample-index-slider-mobile-2">
+                    <img class="sample-mobile-2" alt="sample-mobile-3"  src="https://static.wixstatic.com/media/e41247_8312c4320aa64f039950e544e6437fef~mv2.png">
                 </div>
             </div>
 
-            <div class="frecuentItems fr3">
-                <div class="question">
-                    <h3 class="questions">¿Qué necesito para crear un hábito?</h3>
-                    <div class="more">+</div>
+    <!-- Slider 4 -->
+
+            <div class="swiper-slide index-slider-4">
+
+                <div class="circles-container">
+                    <div class="circles effect-gradient"><p class="num-circles">1</p></div>
+                    <div class="circles circles-2 effect-gradient"><p class="num-circles">2</p></div>
+                    <div class="circles effect-gradient"><p class="num-circles">3</p></div>
                 </div>
-                <div class="answer">
-                    <p>Si nuestro objetivo es adoptar un hábito debemos tener en claro lo siguiente: <br> • Tener nuestros objetivos claros <br> • Ser realista con nuestros objetivos <br> • Planear como lo vamos a cumplir <br> • Ser constantes día a día <br> • No depender solo de la motivación</p>
+
+                <div class="introduction-4">
+
+                    <div class="sample-index-slider-4">
+                        <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
+                        <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
+                    </div>
+
+                    <div class="box-content">
+                        <h2 class="title">Lista de tareas</h2>
+                    </div>
+
+                    <div class="introduction-box-4">
+                        <h2 class="subtitle-4">Jerarquiza que es lo mas importante en tu día</h2>
+                        <p class="text-introduction">
+                            Ordena tus tareas, metas y deseos. Da lo mejor de ti para completarlos!
+                        </p>
+                        <img class="newfocus-logo res" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
+
+                    </div>
+
+                    <div class="sample-index-slider-4">
+                        <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
+                        <img class="sample-4 sample-res" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
+                    </div>
+
+                </div>
+
+                <div class="circles-container">
+                    <div class="circles effect-gradient"><p class="num-circles">4</p></div>
+                    <div class="circles circles-5 effect-gradient"><p class="num-circles">5</p></div>
+                    <div class="circles effect-gradient"><p class="num-circles">6</p></div>
+                </div>
+
+                <div class="sample-index-slider-mobile-2">
+                    <img class="sample-mobile-2" alt="sample-mobile-4"  src="https://static.wixstatic.com/media/e41247_cf15b8dac0d045f2885358a233cf9563~mv2.png">
                 </div>
             </div>
-            
-            
-            <div class="frecuentItems fr4">
-                <div class="question">
-                    <h3 class="questions">¿Qué es un mal hábito?</h3>
-                    <div class="more">+</div>
+
+    <!-- Slider 5 -->
+
+            <div class="swiper-slide index-slider-5">
+                <div class="introduction-5">
+                    <div class="box-content">
+                        <h2 class="title">Calendario</h2>
+                    </div>
+
+                    <div class="introduction-box">
+                        <h2 class="subtitle">¡No lo olvides!</h2>
+                        <p class="text-introduction-4">
+                            Recuerda con antelación tus eventos importantes como los cumpleaños, tus reuniones y festividades
+                        </p>
+                        <img class="newfocus-logo" alt="logo" src="https://static.wixstatic.com/media/e41247_6e8c175bc08548d8bd40da130ee94f69~mv2.png">
+                    </div>
                 </div>
-                <div class="answer">
-                    <p> Los malos hábitos suelen ser conductas que no son positivas para nosotros, a menudo queremos cambiar estas conductas pero muchas veces no podemos o recaemos en estas, algunos ejemplos: <br> • Dejar el alcohol de fumar  <br> • Hacer ejercicio <br> • Comer de forma saludable <br> • Dormir bien</p>
+
+                <div class="sample-index-slider-5">
+                    <div class="calendar effect-gradient">
+                        <div class="calendar-head">
+                            <h3 class="calendar-head-text">CALENDARIO</h3>
+                        </div>
+                        <p class="calendar-text">20<br>23</p>
+                    </div>
+                    <div class="sample-index-slider-sub-5">
+                        <img class="sample-5 sample-res" alt="sample-slider-5" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
+                        <img class="sample-5 sample-res" alt="sample-slider-5" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
+                    </div>
                 </div>
+
+                <div class="sample-index-slider-mobile">
+                    <img class="sample-mobile-2" alt="" src="https://static.wixstatic.com/media/e41247_82fe847db4df4436beb44507e483ff45~mv2.png">
+                </div>
+
             </div>
-            
+
+    <!-- Slider 6 -->
+
+            <div class="swiper-slide index-slider-6">
+                <div class="introduction-5">
+                    <h2 class="title">Bitacora</h2>
+                <div class="introduction-box">
+                    <h2 class="subtitle">No los olvides!</h2>
+                    <p class="text-introduction">
+                        Memora tus recuerdos en palabras, anota tus sentimientos, describe como fue tu día, se mas consciente de lo que quieres y quien eres
+                    </p>
+                    </div>
+                </div>
+
+                <div class="sample-index-slider-mobile-3">
+                    <img class="sample-mobile-2 sample-6" alt="sample-mobile-2" src="https://static.wixstatic.com/media/e41247_4659db4f0de4436fb8e315b09c703385~mv2.png">
+                </div>
+
+            </div>
+
         </div>
-</section>
+
+    <!-- Flechas de navegación  -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </section>
+
+    <!-- ######## Separator ########--> <div id="sectionAbout"></div>
+
+    <section class="section-about">
+
+        <!-- About New Focus -->
+
+        <h2 class="title-2">Sobre <br> New Focus</h2>
+        <div class="container-box-about">
+            <div class="subcontainer-1 effect-gradient">
+                <h3 class="name-box-about">New Focus</h3>
+                <h6 class="slogan-box-about">CREA TU MEJOR VERSIÓN</h6>
+                <img class="icon-box-about" alt="icono-newfocus" src="https://static.wixstatic.com/media/e41247_968c0b6efef0474b94df4e74d4bfd81f~mv2.png">
+            </div>
+            <div class="subcontainer-2">
+                <h3 class="name-box-about-2">New Focus</h3>
+                <h6 class="slogan-box-about-2">CREA TU MEJOR VERSIÓN</h6>
+                <p class="text-box-about">New Focus es una aplicación la cual incentivara a las personas para que logren mejorar su rendimiento, disciplina y motivación en sus hábitos cotidianos, será de ayuda con el desarrollo de los objetivos de las personas y que estos logren dejar sus malos hábitos</p>
+            </div>
+        </div>
+
+        <!-- Institutional Content -->
+
+        <div class="line-container">
+            <div class="line-contains">
+                <div class="line-box">
+                    <h4 class="line-title">Misión</h4>
+                    <span class="line"></span>
+                    <p class="line-description">Mejorar la calidad de vida de nuestros usuarios teniendo como enfoque el fomentar los hábitos saludables a través de una aplicación ofreciendo las herramientas y estrategias necesarias las cuales nos permite realizar cambios duraderos y sostenibles en nuestra vida.</p>
+                </div>
+
+                <div class="line-box">
+                    <h4 class="line-title">Visión</h4>
+                    <span class="line"></span>
+                    <p class="line-description">Para el año 2030 aspiramos a ser una de las aplicaciones lideres en el ámbito de creación de hábitos y la mejora de la productividad, reconocido por nuestra capacidad de innovación contando con una amplia base de usuarios registrados que confíen en nosotros para alcanzar sus metas personales y profesionales.</p>
+                </div>
+            </div>
+            <div class="line-contains">
+                <div class="line-box">
+                    <h4 class="line-title">Responsabilidad Ambiental</h4>
+                    <span class="line"></span>
+                    <p class="line-description">El objetivo es motivar a los usuarios a adoptar hábitos que contribuyan al cuidado y protección del medio ambiente. Para lograrlo, se busca fomentar la conciencia ambiental en los usuarios y animarlos a realizar tareas tanto individuales como colectivas, con el fin de colaborar en la preservación del planeta.</p>
+                </div>
+
+                <div class="line-box">
+                    <h4 class="line-title">Responsabilidad Social</h4>
+                    <span class="line"></span>
+                    <p class="line-description">La gran mayoría de las personas no son conscientes de que su vida está controlada por los hábitos que poseen, y nuestro compromiso es en que las personas logren tener el control de su vida en aspectos como: El cuidado de la integridad física y mental, el rendimiento académico y laboral, mayor noción sobre el manejo de acciones financieras y sociales.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Promotional Content -->
+
+        <h2 class="promo-title">Contenido promocional</h2>
+        <div class="promo-slider">
+            <div class="swiper-wrapper">
+
+                <div class="slide-promo promo-img1 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Folleto</h3>
+                        <a class="promo-link" href="https://drive.google.com/file/d/1M9Qte0wDmaV5bjFeF6nc5k055DLPb24a/view?usp=drive_link" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+                <div class="slide-promo promo-img2 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Infografia</h3>
+                        <a class="promo-link" href="https://drive.google.com/file/d/1by_E1L9KUQvM13_KfKPsKoDx1B8a1Eni/view?usp=drive_link" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+                <div class="slide-promo promo-img3 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Volante</h3>
+                        <a class="promo-link" href="https://drive.google.com/file/d/1Zt0hwOoxpH3NdA2ApLuNrpGgDNr9U9Yd/view?usp=drive_link" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+                <div class="slide-promo promo-img4 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Tarjetas</h3>
+                        <a class="promo-link" href="https://drive.google.com/file/d/1UG66N06cgYbzedOlyyIbDFiZ9B6mmCwL/view?usp=drive_link" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+                <div class="slide-promo promo-img6 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Catalogo</h3>
+                        <a class="promo-link" href="https://drive.google.com/file/d/1CDE-7Dam458VuCtbxdxr8csRJ06DuJUy/view?usp=drive_link" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+                <div class="slide-promo promo-img5 swiper-slide">
+                    <div class="icon-content">
+                        <h3 class="icon-title">Prototipo</h3>
+                        <a class="promo-link" href="https://www.figma.com/proto/5P78h8gTGLuPAJh3hEFd6p/Modo-blanco?page-id=0%3A1&type=design&node-id=1-2&viewport=14%2C200%2C0.18&t=gErIIBGVJbryIy0A-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank">Ver</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ######## Separator ########--> <div id="sectionQuestion"></div>
+
+    <section class="section-question">
+
+        <div  class="dropdown-question">
+
+            <h2 class="title box">Mas sobre nuestro objetivo</h2>
+            <div class="text-box-about box">Si estas interesado en saber un poco mas sobre el objetivo de esta aplicacion puedes ver temas relacionados con los hábitos o sus caracteristicas</div>
+
+            <div class="frecuentContainer">
+
+                <div class="frecuentItems fr1">
+                    <div class="question ">
+                        <h3 class="questions">¿Qué es un habito?</h3>
+                        <div class="more">+</div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-text">Un hábito es una acción o comportamiento repetido de forma regular, automática y casi inconsciente. Los hábitos son patrones que formamos en nuestra vida diaria y pueden ser tanto positivos como negativos.</p>
+                    </div>
+                </div>
+
+                <div class="frecuentItems fr2">
+                    <div class="question">
+                        <h3 class="questions">Tipos de hábitos?</h3>
+                        <div class="more">+</div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-text">Nuestra vida está conformada por nuestros hábitos. Algunas de las categorías que abarcan los hábitos son: <br> • Hábitos Alimenticios <br> • Hábitos Deportivos <br>• Hábitos de Descanso <br>• Hábitos Académicos</p>
+                    </div>
+                </div>
+
+                <div class="frecuentItems fr3">
+                    <div class="question">
+                        <h3 class="questions">¿Qué necesito para crear un hábito?</h3>
+                        <div class="more">+</div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-text">Si nuestro objetivo es adoptar un hábito debemos tener en claro lo siguiente: <br> • Tener nuestros objetivos claros <br> • Ser realista con nuestros objetivos <br> • Planear como lo vamos a cumplir <br> • Ser constantes día a día <br> • No depender solo de la motivación</p>
+                    </div>
+                </div>
+                
+                <div class="frecuentItems fr4">
+                    <div class="question">
+                        <h3 class="questions">¿Qué es un mal hábito?</h3>
+                        <div class="more">+</div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-text"> Los malos hábitos suelen ser conductas que no son positivas para nosotros, a menudo queremos cambiar estas conductas pero muchas veces no podemos o recaemos en estas, algunos ejemplos: <br> • Dejar el alcohol de fumar  <br> • Hacer ejercicio <br> • Comer de forma saludable <br> • Dormir bien</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer effect-gradient">
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100095473235472&mibextid=ZbWKwL" target="_blank">
+                <img src="https://static.wixstatic.com/media/e41247_290f2558bdfd4b118e0be4853386dac1~mv2.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/new_focus._?igshid=MzRlODBiNWFlZA==" target="_blank">
+                <img src="https://static.wixstatic.com/media/e41247_d85f28406aec42639c4abaa1335b6dc1~mv2.png" alt="Twitter">
+            </a>
+            <a href="https://twitter.com/New_Focus_?t=3nANUIsecv_CplHNxpaRkA&s=09" target="_blank">
+                <img src="https://static.wixstatic.com/media/e41247_3675c1c59a7a4781a48f4581778f8b26~mv2.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@new_focus?is_from_webapp=1&sender_device=pc" target="_blank">
+                <img src="https://static.wixstatic.com/media/e41247_966967c9955d40c59c896bb2752f515b~mv2.png" alt="Tik Tok">
+            </a>
+        </div>
+    </footer>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

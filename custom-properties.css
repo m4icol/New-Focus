@@ -1,0 +1,96 @@
+:root {
+    --color-morado: #E382FF;
+    --color-naranja: #fac671;
+    --promo-img1: url(https://static.wixstatic.com/media/e41247_5a282c033bf14d378862644788f4a8a5~mv2.png);
+    --promo-img2: url(https://static.wixstatic.com/media/e41247_8845611e7101452cabac40e6b16bb67b~mv2.png);
+    --promo-img3: url(https://static.wixstatic.com/media/e41247_f9d31b955e13474fa1a15b7eebcf3e5a~mv2.png);
+    --promo-img4: url(https://static.wixstatic.com/media/e41247_f6f8cd8c0ef743a8b7070a6db0358d35~mv2.png);
+    --promo-img5: url(https://static.wixstatic.com/media/e41247_1fc2fe9147e045beab6c9c78e55b133a~mv2.png);
+    --promo-img6: url(https://static.wixstatic.com/media/e41247_beba2dea5d714fedad7c33a1789c4dd0~mv2.png);
+}
+
+.effect-gradient {
+    background: linear-gradient( 45deg, #E382FF,  #FFCF84);
+    background-size: 1000%;
+    animation: glowing 13s linear infinite;
+}
+
+@keyframes glowing {
+    0%{ 
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 85% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.promo-img1 {
+    background-image: var(--promo-img1);
+}
+
+.promo-img2 {
+    background-image: var(--promo-img2);
+}
+
+.promo-img3 {
+    background-image: var(--promo-img3);
+}
+
+.promo-img4 {
+    background-image: var(--promo-img4);
+}
+
+.promo-img5 {
+    background-image: var(--promo-img5);
+}
+
+.promo-img6 {
+    background-image: var(--promo-img6);
+}
+
+/* Estilo Botones */
+
+.swiper .swiper-button-prev,
+    .swiper-button-next {
+    --swiper-navigation-size: 1.25rem;
+    --swiper-theme-color: #000;
+    background-color: #f2f2f2;
+    font-weight: 900;
+    height: 3.3rem;
+    width: 2.1rem;
+    padding: 2rem 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.swiper .swiper-button-next,
+    .swiper-button-prev
+    {
+    --swiper-navigation-size: 1.25rem;
+    --swiper-theme-color: #000;
+    background-color: #f2f2f2;
+    font-weight: 900;
+    height: 3.3rem;
+    width: 2.1rem;
+    padding: 2rem 1.5rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.swiper .swiper-button-prev {
+        border-radius: 0 3rem 3rem 0;
+        left: 0;
+        }
+
+.swiper .swiper-button-next {
+        border-radius: 3rem 0 0 3rem;
+        right: 0;
+        }
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+    opacity: 1;
+}

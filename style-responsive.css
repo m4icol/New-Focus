@@ -539,4 +539,13 @@
         height: auto;
         margin: 0;
     }
+
+    .social-media a {
+        margin: 0 2rem;
+    }
+
+    .social-media img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
